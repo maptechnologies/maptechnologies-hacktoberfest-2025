@@ -62,6 +62,16 @@ We welcome contributions! Follow these simple steps to contribute:
 git checkout -b fix/responsive-navbar
 
 
+## ⚙️ Tech Stack
+
+- **Next.js** – React framework for building web apps  
+- **React** – UI library  
+- **Node.js & npm** – Runtime and package manager  
+- **CSS / Tailwind / Geist Font** – Styling and font optimization  
+- **Vercel** – Deployment platform
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
