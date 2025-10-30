@@ -75,6 +75,48 @@ We welcome contributions! Follow these simple steps to contribute:
 - **Vercel** – Deployment platform
 
 
+## ❓ Frequently Asked Questions (FAQ)
+
+### 1. I ran `npm install` but get errors. What should I do?
+- Make sure you have the latest version of Node.js installed (v18 or above recommended).  
+- Delete the `node_modules` folder and `package-lock.json` file, then run:
+```bash
+npm install
+```
+
+### 2. `npm run dev` doesn’t start the server.
+- Ensure no other process is using port `3000`.  
+- You can try running on a different port:
+```bash
+npm run dev -- -p 3001
+```
+
+
+---
+
+```markdown
+### 3. The page doesn’t auto-refresh when I make changes.
+- Make sure you are editing files inside the `app` or `components` folder.  
+- Check if your browser has caching issues; try a hard refresh (`Ctrl + Shift + R` or `Cmd + Shift + R`).  
+- Restart the development server if hot reloading fails.
+
+### 4. I’m seeing font-related issues.
+- This project uses the **Geist font** via `next/font`. Make sure your internet connection allows font downloads.  
+- Try clearing the `.next` cache and restarting:
+```bash
+rm -rf .next
+npm run dev
+```
+
+### 5. Can I use `bun` or `pnpm` instead of npm?
+Yes! The project supports multiple package managers. Just make sure to use the equivalent commands:  
+- `pnpm install` → `pnpm dev`  
+- `bun install` → `bun dev`
+
+### 6. I want to contribute but don’t know where to start.
+- Look for issues labeled `good first issue` in the GitHub repository.  
+- Start by adding or improving components in the `components` folder.  
+- Follow the **Contributor Instructions** section in this README.
 
 ## Learn More
 
