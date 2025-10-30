@@ -32,22 +32,27 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 1. Clone the repository:
    ```bash
    git clone https://github.com/umarhasnain/maptechnologies-hacktoberfest-2025.git
+   ```
 
-Move into the project directory:
-    ```bash
-    cd maptechnologies-hacktoberfest-2025
+2. Move into the project directory:
+   ```bash
+   cd maptechnologies-hacktoberfest-2025
+   ```
 
-Install dependencies:
-    ```bash
-    npm install
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run the development server:
-    ```bash
-    npm run dev
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-Open your browser and go to:
-    ```bash
-    http://localhost:3000
+5. Open your browser and go to:
+   ```bash
+   http://localhost:3000
+   ```
 
 ✅ Now the project should be running successfully!
 
@@ -59,7 +64,6 @@ We welcome contributions! Follow these simple steps to contribute:
 - Create a new branch for your changes (`git checkout -b your-branch-name`).  
 - Make your updates and commit them with clear messages.  
 - Push your branch and open a Pull Request. 🚀
-git checkout -b fix/responsive-navbar
 
 
 ## ⚙️ Tech Stack
