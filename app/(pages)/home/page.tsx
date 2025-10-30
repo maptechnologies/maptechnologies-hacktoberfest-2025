@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Navbar />
@@ -17,6 +17,14 @@ export default function Home() {
               Empowering innovation through technology. We craft modern, scalable, 
               and smart digital solutions that transform your ideas into reality.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                Get Started
+              </button>
+              <button className="px-8 py-3 border-2 border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                Learn More
+              </button>
+            </div>
           </div>
 
           {/* Features Section */}
@@ -51,9 +59,24 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          {/* CTA Section */}
+          <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl p-12 text-center text-white">
+            <h2 className="text-3xl font-bold mb-4">
+              Ready to Transform Your Ideas?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Join us in building the future of technology, one innovation at a time.
+            </p>
+            <button className="px-8 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+              Start Your Project
+            </button>
+          </div>
         </div>
       </main>
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;

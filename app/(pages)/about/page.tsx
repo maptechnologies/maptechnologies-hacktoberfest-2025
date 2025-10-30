@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-export default function About() {
+const About = () => {
   return (
     <div>
       <Navbar />
@@ -40,9 +40,48 @@ export default function About() {
               </p>
             </div>
           </div>
+          
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+              Why Choose Us?
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🚀</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Innovation</h3>
+                <p className="text-gray-600 text-sm">
+                  Cutting-edge solutions using the latest technologies
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🤝</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Collaboration</h3>
+                <p className="text-gray-600 text-sm">
+                  Working together to achieve extraordinary results
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">⭐</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Excellence</h3>
+                <p className="text-gray-600 text-sm">
+                  Committed to delivering high-quality solutions
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <Footer />
     </div>
   );
-}
+};
+
+export default About;
