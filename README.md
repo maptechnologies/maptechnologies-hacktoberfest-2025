@@ -1,4 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 MapTechnologies Hacktoberfest 2025
+
+Welcome to the **MapTechnologies Hacktoberfest 2025** project! This is a modern, responsive web application built with Next.js and designed to showcase innovative digital solutions while providing an excellent platform for open-source contributions during Hacktoberfest.
+
+## 🌟 Project Overview
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), featuring a clean, modern design with beautiful gradients and animations.
+
+### ✨ Key Features
+
+- 🎨 **Modern UI/UX**: Beautiful gradient backgrounds and smooth animations using AOS (Animate On Scroll)
+- 📱 **Fully Responsive**: Mobile-first design that works perfectly on all devices
+- 🔧 **Next.js 15**: Built with the latest Next.js App Router for optimal performance
+- 🎯 **TypeScript**: Type-safe development for better code quality
+- 🎭 **Tailwind CSS**: Utility-first CSS framework for rapid styling
+- 🧩 **Component-Based**: Modular, reusable React components
+- 🌐 **Navigation System**: Responsive navbar with mobile menu support
+- 📄 **Dynamic Routing**: Organized page structure with Next.js routing
+- 🎪 **Interactive Elements**: Hover effects and transitions for better UX
+- 🔗 **Social Integration**: Footer with social media links
+
+### 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **Styling**: Tailwind CSS, CSS Modules
+- **Animations**: AOS (Animate On Scroll)
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans & Geist Mono
+- **Development**: ESLint, PostCSS
 
 ## Getting Started
 
