@@ -45,6 +45,46 @@ Open your browser and go to:
 
 ✅ Now the project should be running successfully!
 
+## 📖 Sample Usage
+
+This Next.js application includes:
+
+### 🎨 Components
+```jsx
+// Using the Navbar component
+import Navbar from './components/Navbar';
+
+function MyPage() {
+  return (
+    <div>
+      <Navbar />
+      {/* Your page content */}
+    </div>
+  );
+}
+```
+
+### 🎨 Styling with Tailwind CSS
+```jsx
+// Example of custom styling
+<div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+  <h1 className="text-white text-2xl font-bold">MapTechnologies</h1>
+</div>
+```
+
+### 🚀 Project Structure
+```
+app/
+├── components/          # Reusable UI components
+│   ├── Navbar.tsx      # Navigation component
+│   └── Footer.tsx      # Footer component
+├── (pages)/            # Route pages
+│   ├── about/
+│   └── home/
+├── api/                # API routes
+└── globals.css         # Global styles
+```
+
 ## 🧑‍💻 Contributor Instructions
 
 We welcome contributions! Follow these simple steps to contribute:
