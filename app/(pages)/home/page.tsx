@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import { Navbar, Footer } from "../../components/layout";
+import { Button, FeatureCard } from "../../components/ui";
+import { COMPANY_INFO } from "@/constants";
 
 const Home = () => {
   return (
@@ -11,53 +12,43 @@ const Home = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 mb-6">
-              Welcome to MapTechnologies
+              Welcome to {COMPANY_INFO.name}
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Empowering innovation through technology. We craft modern, scalable, 
-              and smart digital solutions that transform your ideas into reality.
+              {COMPANY_INFO.fullDescription}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+              <Button variant="primary" size="lg">
                 Get Started
-              </button>
-              <button className="px-8 py-3 border-2 border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition-all duration-300">
+              </Button>
+              <Button variant="outline" size="lg">
                 Learn More
-              </button>
+              </Button>
             </div>
           </div>
 
           {/* Features Section */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl text-white">💡</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Innovation</h3>
-              <p className="text-gray-600">
-                Cutting-edge solutions using the latest technologies and best practices
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl text-white">🎯</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Precision</h3>
-              <p className="text-gray-600">
-                Tailored solutions that meet your specific business needs and goals
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl text-white">🚀</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Performance</h3>
-              <p className="text-gray-600">
-                Fast, reliable, and scalable applications built for the future
-              </p>
-            </div>
+            <FeatureCard
+              icon={<span className="text-2xl text-white">💡</span>}
+              title="Innovation"
+              description="Cutting-edge solutions using the latest technologies and best practices"
+              gradient="from-blue-500 to-cyan-500"
+            />
+            
+            <FeatureCard
+              icon={<span className="text-2xl text-white">🎯</span>}
+              title="Precision"
+              description="Tailored solutions that meet your specific business needs and goals"
+              gradient="from-purple-500 to-pink-500"
+            />
+            
+            <FeatureCard
+              icon={<span className="text-2xl text-white">🚀</span>}
+              title="Performance"
+              description="Fast, reliable, and scalable applications built for the future"
+              gradient="from-green-500 to-teal-500"
+            />
           </div>
 
           {/* CTA Section */}
@@ -68,9 +59,13 @@ const Home = () => {
             <p className="text-xl mb-8 opacity-90">
               Join us in building the future of technology, one innovation at a time.
             </p>
-            <button className="px-8 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <Button 
+              variant="primary" 
+              size="lg"
+              className="bg-white text-indigo-600 hover:bg-gray-100 hover:text-indigo-700 hover:scale-100"
+            >
               Start Your Project
-            </button>
+            </Button>
           </div>
         </div>
       </main>
