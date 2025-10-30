@@ -43,10 +43,16 @@ const Navbar = () => {
             <li key={link.name}>
               <Link
                 href={link.href}
-                className="hover:text-yellow-300 transition-all duration-200 relative group"
+                className="hover:text-yellow-300 transition-all duration-300 relative group
+                         px-3 py-2 rounded-md hover:bg-white/10 hover:scale-105
+                         active:scale-95 hover:shadow-lg hover:shadow-yellow-300/20"
               >
                 {link.name}
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+                <span
+                  className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-300 
+                               transition-all duration-300 group-hover:w-full
+                               group-hover:shadow-sm group-hover:shadow-yellow-300"
+                ></span>
               </Link>
             </li>
           ))}
@@ -56,9 +62,18 @@ const Navbar = () => {
         <div className="md:hidden" data-aos="fade-left">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white focus:outline-none"
+            className="text-white focus:outline-none p-2 rounded-lg 
+                     hover:bg-white/20 hover:scale-110 hover:rotate-3
+                     transition-all duration-300 ease-in-out
+                     active:scale-95 active:bg-white/30"
           >
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            <div
+              className={`transform transition-transform duration-300 ${
+                menuOpen ? "rotate-180" : ""
+              }`}
+            >
+              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            </div>
           </button>
         </div>
       </div>
@@ -74,7 +89,9 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-yellow-300 transition duration-200 text-lg"
+                className="hover:text-yellow-300 transition-all duration-300 text-lg
+                         px-4 py-2 rounded-lg hover:bg-white/10 hover:scale-105
+                         active:scale-95 block hover:shadow-md hover:shadow-yellow-300/20"
               >
                 {link.name}
               </Link>
