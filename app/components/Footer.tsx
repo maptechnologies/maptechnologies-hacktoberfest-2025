@@ -22,8 +22,8 @@ const Footer = () => {
             MapTechnologies
           </h2>
           <p className="text-gray-200 text-sm">
-            Empowering innovation through technology.  
-            We craft modern, scalable, and smart digital solutions.
+            Empowering innovation through technology. We craft modern, scalable,
+            and smart digital solutions.
           </p>
         </div>
 
@@ -36,7 +36,9 @@ const Footer = () => {
             <li>
               <Link
                 href="/about"
-                className="hover:text-yellow-300 transition duration-200"
+                className="hover:text-yellow-300 transition-all duration-300
+                         hover:scale-105 hover:translate-x-1 inline-block
+                         hover:drop-shadow-sm active:scale-95"
               >
                 About Us
               </Link>
@@ -44,7 +46,9 @@ const Footer = () => {
             <li>
               <Link
                 href="/projects"
-                className="hover:text-yellow-300 transition duration-200"
+                className="hover:text-yellow-300 transition-all duration-300
+                         hover:scale-105 hover:translate-x-1 inline-block
+                         hover:drop-shadow-sm active:scale-95"
               >
                 Projects
               </Link>
@@ -52,7 +56,9 @@ const Footer = () => {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-yellow-300 transition duration-200"
+                className="hover:text-yellow-300 transition-all duration-300
+                         hover:scale-105 hover:translate-x-1 inline-block
+                         hover:drop-shadow-sm active:scale-95"
               >
                 Contact
               </Link>
@@ -60,7 +66,9 @@ const Footer = () => {
             <li>
               <Link
                 href="/privacy-policy"
-                className="hover:text-yellow-300 transition duration-200"
+                className="hover:text-yellow-300 transition-all duration-300
+                         hover:scale-105 hover:translate-x-1 inline-block
+                         hover:drop-shadow-sm active:scale-95"
               >
                 Privacy Policy
               </Link>
@@ -77,28 +85,40 @@ const Footer = () => {
             <Link
               href="https://facebook.com"
               target="_blank"
-              className="hover:text-yellow-300 transition-all duration-300"
+              className="hover:text-yellow-300 transition-all duration-300
+                       hover:scale-125 hover:rotate-12 hover:-translate-y-1
+                       p-2 rounded-full hover:bg-white/10 hover:shadow-lg
+                       hover:shadow-blue-500/30 active:scale-110"
             >
               <Facebook />
             </Link>
             <Link
               href="https://twitter.com"
               target="_blank"
-              className="hover:text-yellow-300 transition-all duration-300"
+              className="hover:text-yellow-300 transition-all duration-300
+                       hover:scale-125 hover:rotate-12 hover:-translate-y-1
+                       p-2 rounded-full hover:bg-white/10 hover:shadow-lg
+                       hover:shadow-blue-400/30 active:scale-110"
             >
               <Twitter />
             </Link>
             <Link
               href="https://linkedin.com"
               target="_blank"
-              className="hover:text-yellow-300 transition-all duration-300"
+              className="hover:text-yellow-300 transition-all duration-300
+                       hover:scale-125 hover:rotate-12 hover:-translate-y-1
+                       p-2 rounded-full hover:bg-white/10 hover:shadow-lg
+                       hover:shadow-blue-600/30 active:scale-110"
             >
               <Linkedin />
             </Link>
             <Link
               href="https://github.com"
               target="_blank"
-              className="hover:text-yellow-300 transition-all duration-300"
+              className="hover:text-yellow-300 transition-all duration-300
+                       hover:scale-125 hover:rotate-12 hover:-translate-y-1
+                       p-2 rounded-full hover:bg-white/10 hover:shadow-lg
+                       hover:shadow-gray-400/30 active:scale-110"
             >
               <Github />
             </Link>
