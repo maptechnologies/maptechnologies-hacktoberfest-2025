@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MapTechnologies | Hacktoberfest 2025",
-  description: "Empowering innovation through technology. Join MapTechnologies Hacktoberfest 2025 project and contribute to open source!",
+  description:
+    "Empowering innovation through technology. Join MapTechnologies Hacktoberfest 2025 project and contribute to open source!",
 };
 
 export default function RootLayout({
@@ -28,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ScrollToTop /> {/* ← add this just before closing body */}
       </body>
     </html>
   );
