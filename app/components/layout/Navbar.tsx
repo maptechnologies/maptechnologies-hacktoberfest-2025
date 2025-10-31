@@ -1,23 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Menu, X } from "lucide-react";
+import { NAV_LINKS, COMPANY_INFO } from "@/constants";
+import { initializeAOS } from "@/lib/utils";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    initializeAOS();
   }, []);
-
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
-  ];
 
   return (
     <nav
@@ -31,7 +24,7 @@ const Navbar = () => {
           className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-white tracking-wide"
           data-aos="fade-right"
         >
-          MapTechnologies
+          {COMPANY_INFO.name}
         </Link>
 
         {/* Desktop Menu */}
@@ -39,7 +32,7 @@ const Navbar = () => {
           className="hidden md:flex space-x-8 text-white font-medium"
           data-aos="zoom-in"
         >
-          {navLinks.map((link) => (
+          {NAV_LINKS.map((link) => (
             <li key={link.name}>
               <Link
                 href={link.href}
@@ -69,7 +62,7 @@ const Navbar = () => {
           data-aos="fade-down"
           className="md:hidden flex flex-col items-center bg-indigo-700 text-white space-y-4 py-6 shadow-lg"
         >
-          {navLinks.map((link) => (
+          {NAV_LINKS.map((link) => (
             <li key={link.name}>
               <Link
                 href={link.href}
